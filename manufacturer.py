@@ -2,17 +2,14 @@ class Manufacturer:
     def __init__(self, name, country):
         self._name = name
         self._country = country
-    
-    
+
     @property
-    def get_name(self) -> str:
+    def name(self) -> str:
         return self._name
-    
-    
+
     @property
-    def get_country(self) -> str:
+    def country(self) -> str:
         return self._country
-    
-    
+
     def __str__(self):
-        return f"({self._name, {self._country}})"
+        return f"{self._name}, {self._country}"
