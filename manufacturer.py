@@ -4,5 +4,15 @@ class Manufacturer:
         self._country = country
     
     
+    @property
+    def get_name(self) -> str:
+        return self._name
+    
+    
+    @property
+    def get_country(self) -> str:
+        return self._country
+    
+    
     def __str__(self):
         return f"({self._name, {self._country}})"
